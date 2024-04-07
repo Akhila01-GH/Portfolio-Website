@@ -1,0 +1,419 @@
+/* Add Font Awesome library */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    margin: 0;
+    background-color: #000; /* Black background */
+}
+.padd-15 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+h3 {
+    font-size: 33px; /* Font size for h3 */
+}
+
+p {
+    font-size: 20px; /* Font size for p */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.home {
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items at the top */
+    height: 100%; /* Fill the height of the container */
+    margin-bottom: 100px;
+    margin-top: 120px;
+}
+
+.header {
+    font-weight: 600;
+    background-color: #000000; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed; /* Fix header position */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Set z-index to ensure it's above other content */
+    top: 0; /* Align header to the top */
+    left: 0; /* Align header to the left */
+    right: 0; /* Align header to the right */
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display list items as flex items */
+}
+
+.nav li {
+    margin-right: 50px; /* Add right margin for spacing */
+    
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav a:hover {
+    color: #ff0000; /* Change color on hover */
+}
+
+.main-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+
+.main-content {
+    flex: 1; /* Take remaining space */
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+}
+
+.home .home-info {
+    flex: 1; /* Take remaining vertical space */
+    max-width: 60%;
+    margin-right: 1cm; /* Move 1cm to the right */
+}
+
+.home .home-img {
+    flex: 0 0 22%; /* Set image width to 22% */
+    height: 320px; /* Set image height */
+    margin-bottom: 20px; /* Space between image and content */
+    background-color: #ff0000; /* Dark magenta background color */
+    background-image: url('Akhila-image.jpg'); /* Image URL */
+    background-size: cover; /* Cover the entire container */
+    background-position: top; /* Align image to the top */
+    border: 3px solid #ff0000; /* Dark magenta border */
+    transition: margin-right 0.3s, border-color 0.3s; /* Smooth transition for margin and border color */
+}
+
+.home .home-img:hover {
+    margin-right: 2cm; /* Move 2cm to the right on hover */
+    border-color: #00b3ff; /* Change border color on hover */
+}
+
+.name {
+    color: #ff0000; /* Dark magenta color */
+    font-family: cursive; /* Cursive font */
+}
+
+.btn {
+    display: inline-block; /* Display as inline-block to create a button */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #ff0000; /* Dark magenta background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.btn:hover {
+    background-color: #00b3ff; /* Change background color on hover */
+}
+
+
+
+
+
+/* -----------About Page--------------- */
+#about{
+    margin-top: 200px;
+    margin-bottom: 200px;
+} 
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-section {
+    flex: 0 0 30%; /* Set width for sections */
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.about h2 {
+    font-size: 32px; /* Font size for heading */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    color: #fff; /* White text color */
+}
+.about-section h3 {
+    font-size: 26px; /* Font size for section headings */
+}
+
+.about-section ul {
+    padding-left: 20px; /* Add left padding to lists */
+}
+
+.about-section ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* ------------Projects--------- */
+#projects{
+    margin-bottom: 100px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff0000);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.sub-title{
+    font-size: 32px;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/* --------------Contact------------- */
+.contact {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 40px;
+    text-align: center; /* Center text */
+}
+
+.contact h2 {
+    font-size: 32px; /* Font size for heading */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.contact-icons {
+    display: flex; /* Display icons as flex items */
+    justify-content: center; /* Align icons horizontally in the center */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.contact-icons a {
+    color: #fff;
+    font-size: 24px; /* Font size for icons */
+    margin-right: 20px; /* Right margin between icons */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.contact-icons a:hover {
+    color: #00b3ff; /* Dark magenta color on hover */
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.name-line,
+.email-line,
+.subject-line,
+.message-line {
+    width: 100%; /* Set width to 100% for full width */
+}
+.name-line input[type="text"],
+.email-line input[type="email"],
+.subject-line input[type="text"],
+.message-line input[type="text"] {
+    width: calc(100% - 800px); /* Set width to 100% minus padding */
+    padding: 10px;
+    margin: 7px; /* Add margin for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+.message-line input[type="text"] {
+    width: calc(100% - 800px); /* Set width to 100% minus padding */
+    padding: 15px; /* Increase padding for more space inside the input field */
+    margin: 7px; /* Add margin for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+.contact-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #00b3ff;
+}
+/* --------------copyright-------------- */
+.copyright{
+    width: 100%;
+    text-align: center;
+    background: #000;
+    font-weight: 300;
+    margin-bottom: -39px; /* Remove bottom margin */
+    padding: 10px 0; /* Add padding instead of margin for top and bottom spacing */
+}
+/* -----------Responsiveness---------- */
+/* Extra small devices (phones, 600px and down) */
+@media  (max-width: 600px) {
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .home .home-img{
+        height: 180px;
+        flex: 0 0 24%;
+        margin-top: 70px;
+    }
+    .header{
+        padding-left: 25px;
+    }
+
+
+
+    .about h2{
+        font-size: 25px;
+    }    
+    .about-section {
+        flex: 0 0 100%; /* Set width for sections */
+        font-size: 18px;
+    }
+    .about-section h3 {
+        font-size: 20px; /* Font size for section headings */
+    }
+
+
+    .sub-title{
+        font-size: 25px;
+    }
+
+
+    .contact h2 {
+        font-size: 25px; /* Font size for heading */
+    }
+    .contact-icons a {
+        
+        font-size: 18px; /* Font size for icons */
+        margin: 10px; /* Right margin between icons */
+        }
+
+        .name-line input[type="text"],
+        .email-line input[type="email"],
+        .subject-line input[type="text"],
+        .message-line input[type="text"] {
+            width: calc(100% - 90px); /* Set width to 100% minus padding */
+            padding: 3px;
+            margin: 3px; /* Add margin for spacing */
+        }
+        .message-line input[type="text"] {
+                width: calc(100% - 90px); /* Set width to 100% minus padding */
+                padding: 15px; /* Increase padding for more space inside the input field */
+                margin: 3px; /* Add margin for spacing */
+        }
+        .contact-form input[type="submit"] {
+            padding: 5px 18px;
+            font-size: 13px;
+        } 
+
+
+        .copyright{
+            width: 100%;
+            font-weight: 100;
+            padding: 1px;; /* Add padding instead of margin for top and bottom spacing */
+        }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media  (min-width: 600px) {
+    .name-line input[type="text"],
+    .email-line input[type="email"],
+    .subject-line input[type="text"],
+    .message-line input[type="text"] {
+        width: calc(100% - 500px); /* Set width to 100% minus padding */
+        padding: 7px;
+        margin: 3px; /* Add margin for spacing */
+    }
+    .message-line input[type="text"] {
+            width: calc(100% - 500px); /* Set width to 100% minus padding */
+            padding: 15px; /* Increase padding for more space inside the input field */
+            margin: 5px; /* Add margin for spacing */
+    }
+    .contact-form input[type="submit"] {
+        padding: 8px 20px;
+        
+    } 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  (min-width: 768px) {
+
+}
